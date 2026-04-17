@@ -2,17 +2,11 @@
 
 An interactive, web-based presentation built as a single-page React app. Premium animations via Framer Motion, design via Tailwind CSS.
 
-## Run it
+## 🌐 View the live presentation
 
-Requires Node.js 18+ (install from https://nodejs.org).
+**[https://amitco2707.github.io/ai-presentation/](https://amitco2707.github.io/ai-presentation/)**
 
-```bash
-cd presentation
-npm install
-npm run dev
-```
-
-The dev server opens on http://localhost:5173.
+No install required — open in any browser.
 
 ## Navigation
 
