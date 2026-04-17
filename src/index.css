@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+    background: #0a0a0a;
+    color: #f4e4d0;
+  }
+  body {
+    font-family: "Inter", system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    overflow: hidden;
+  }
+  ::selection {
+    background: #d97757;
+    color: #0a0a0a;
+  }
+}
+
+@layer components {
+  .slide {
+    @apply relative w-full h-screen flex items-center justify-center snap-start snap-always overflow-hidden;
+  }
+
+  .slide-inner {
+    @apply relative w-full max-w-7xl mx-auto px-8 md:px-16 py-16 z-10;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-line text-cream/80
+           hover:border-brand-orange hover:text-cream hover:bg-brand-orange/5 transition-all duration-300;
+  }
+
+  .chip {
+    @apply inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-medium
+           bg-brand-orange/10 text-brand-amber border border-brand-orange/20 tracking-wider uppercase;
+  }
+
+  .glass {
+    @apply bg-elevated/60 backdrop-blur-xl border border-line/80;
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-amber via-brand-orange to-brand-rust;
+  }
+
+  .scroll-container {
+    @apply h-screen w-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth;
+    scrollbar-width: none;
+  }
+  .scroll-container::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@layer utilities {
+  .bg-dots {
+    background-image: radial-gradient(rgba(217, 119, 87, 0.12) 1px, transparent 1px);
+    background-size: 28px 28px;
+  }
+  .bg-grid {
+    background-image:
+      linear-gradient(rgba(217, 119, 87, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(217, 119, 87, 0.05) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+  .mask-fade-y {
+    mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%);
+    -webkit-mask-image: linear-gradient(
+      to bottom,
+      transparent 0%,
+      black 15%,
+      black 85%,
+      transparent 100%
+    );
+  }
+}
