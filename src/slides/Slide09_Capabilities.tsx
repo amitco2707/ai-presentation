@@ -37,7 +37,7 @@ export default function Slide09_Capabilities({ active }: Props) {
   return (
     <SlideShell
       active={active}
-      eyebrow="Chapter 08 — What it can do"
+      eyebrow="Chapter 10 — What it can do"
       title={<>Three ways it <span className="gradient-text">scales up.</span></>}
       subtitle="Skills, multi-agent workflows, and plugins turn one assistant into a whole team."
     >

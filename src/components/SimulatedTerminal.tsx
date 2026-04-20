@@ -6,6 +6,7 @@ export type TerminalLine =
   | { type: "output"; text: string; delay?: number; color?: string }
   | { type: "success"; text: string; delay?: number }
   | { type: "comment"; text: string; delay?: number }
+  | { type: "prompt"; text: string; delay?: number }
   | { type: "blank" };
 
 interface Props {
@@ -115,6 +116,22 @@ export default function SimulatedTerminal({
       return (
         <div key={idx} className="text-muted italic">
           # {line.text}
+        </div>
+      );
+    }
+    if (line.type === "prompt") {
+      return (
+        <div
+          key={idx}
+          className="my-2 px-3 py-2 rounded-md border border-brand-orange/50 bg-brand-orange/10 text-brand-amber flex items-start gap-2"
+        >
+          <span className="text-brand-orange font-bold shrink-0">⚠</span>
+          <span>
+            {line.text}
+            {isTyping && (
+              <span className="inline-block w-2 h-4 align-middle bg-brand-orange animate-blink ml-1" />
+            )}
+          </span>
         </div>
       );
     }
