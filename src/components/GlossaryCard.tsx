@@ -50,7 +50,7 @@ export default function GlossaryCard({
         <p className="text-xs text-brand-amber/80 uppercase tracking-wider mb-3 font-medium">
           {short}
         </p>
-        <p className="text-sm text-muted leading-relaxed flex-1 group-hover:text-cream/80 transition-colors duration-300">
+        <p className="text-sm text-cream/80 leading-relaxed flex-1 group-hover:text-cream transition-colors duration-300">
           {description}
         </p>
       </div>

@@ -11,39 +11,28 @@ const MILESTONES = [
     era: "1950s",
     icon: Brain,
     title: "The Turing Test",
-    body: "Alan Turing asks: can a machine fool a human into thinking it's human? The question defines the field for the next 70 years.",
     heat: "spark",
   },
   {
     era: "1990s",
     icon: Cpu,
     title: "Deep Blue beats Kasparov",
-    body: "Chess — the benchmark of human intellect — falls to a search engine with handcrafted rules. Proof that machines can out-think us in narrow domains.",
     heat: "ember",
   },
   {
     era: "2010s",
     icon: Sparkles,
-    title: "The deep-learning explosion",
-    body: "GPUs + big data + neural networks. Image recognition, speech, translation — every benchmark falls. AI leaves the lab and ships into products.",
+    title: "Deep-learning explosion",
     heat: "fire",
   },
   {
     era: "2020 — 2026",
     icon: Rocket,
     title: "Generative AI everywhere",
-    body: "ChatGPT, Claude, Gemini. Multimodal models, reasoning models, agents. In 4 years we went from 'AI sometimes works' to 'AI writes the code that ships to production'.",
     heat: "blaze",
     accent: true,
   },
 ];
-
-const heatStyles: Record<string, string> = {
-  spark: "from-brand-amber/20 to-transparent",
-  ember: "from-brand-orange/25 to-transparent",
-  fire: "from-brand-orange/40 to-transparent",
-  blaze: "from-brand-rust/60 via-brand-orange/40 to-brand-amber/20",
-};
 
 export default function SlideTimeline({ active }: Props) {
   return (
@@ -53,67 +42,71 @@ export default function SlideTimeline({ active }: Props) {
       title={<>70 years. <span className="gradient-text">Then 4 years that changed everything.</span></>}
       subtitle="Most of AI history was slow. The curve didn't go vertical until the last decade — and it hasn't stopped since."
     >
-      <div className="relative">
-        {/* Vertical timeline rail */}
-        <div className="absolute left-[18px] md:left-[22px] top-2 bottom-2 w-[2px] bg-gradient-to-b from-brand-amber/20 via-brand-orange/60 to-brand-rust" />
+      <div className="relative w-full overflow-hidden">
+        {/* Horizontal timeline rail */}
+        <div className="relative mt-10 md:mt-14 px-4 md:px-8">
+          {/* The axis line */}
+          <motion.div
+            initial={{ scaleX: 0 }}
+            animate={active ? { scaleX: 1 } : { scaleX: 0 }}
+            transition={{ duration: 1.1, ease: "easeOut", delay: 0.25 }}
+            style={{ transformOrigin: "left" }}
+            className="absolute top-[22px] md:top-[26px] left-4 right-4 md:left-8 md:right-8 h-[2px] bg-gradient-to-r from-brand-amber/30 via-brand-orange/70 to-brand-rust"
+          />
 
-        <div className="space-y-6 md:space-y-7">
-          {MILESTONES.map((m, i) => (
-            <motion.div
-              key={m.era}
-              initial={{ opacity: 0, x: -30 }}
-              animate={active ? { opacity: 1, x: 0 } : { opacity: 0, x: -30 }}
-              transition={{ delay: 0.35 + i * 0.12, type: "spring", damping: 22, stiffness: 100 }}
-              className="relative pl-12 md:pl-16"
-            >
-              {/* Node */}
-              <div
-                className={`absolute left-0 top-1 h-10 w-10 md:h-11 md:w-11 rounded-full border flex items-center justify-center z-10 ${
-                  m.accent
-                    ? "border-brand-orange bg-brand-orange/20 shadow-glow-sm"
-                    : "border-brand-orange/40 bg-base"
-                }`}
+          <div className="relative grid grid-cols-4 gap-3 md:gap-5">
+            {MILESTONES.map((m, i) => (
+              <motion.div
+                key={m.era}
+                initial={{ opacity: 0, y: 20 }}
+                animate={active ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+                transition={{
+                  delay: 0.5 + i * 0.15,
+                  type: "spring",
+                  damping: 22,
+                  stiffness: 110,
+                }}
+                className="flex flex-col items-center text-center"
               >
-                <m.icon
-                  size={18}
-                  strokeWidth={1.75}
-                  className={m.accent ? "text-brand-amber" : "text-brand-orange/80"}
-                />
-              </div>
-
-              {/* Card */}
-              <div
-                className={`relative p-5 md:p-6 rounded-xl border overflow-hidden ${
-                  m.accent
-                    ? "border-brand-orange/50 bg-elevated shadow-glow-sm"
-                    : "border-line bg-elevated/80"
-                }`}
-              >
+                {/* Node on the axis */}
                 <div
-                  className={`absolute inset-0 bg-gradient-to-r pointer-events-none ${heatStyles[m.heat]}`}
-                />
-                <div className="relative flex flex-col md:flex-row md:items-baseline gap-2 md:gap-4 mb-2">
-                  <span
-                    className={`font-mono text-xs md:text-sm tracking-widest uppercase ${
-                      m.accent ? "text-brand-amber" : "text-muted"
-                    }`}
-                  >
-                    {m.era}
-                  </span>
-                  <h3
-                    className={`text-xl md:text-2xl font-bold tracking-tight ${
-                      m.accent ? "text-cream" : "text-cream"
-                    }`}
-                  >
+                  className={`relative h-11 w-11 md:h-[52px] md:w-[52px] rounded-full border-2 flex items-center justify-center z-10 shrink-0 ${
+                    m.accent
+                      ? "border-brand-orange bg-brand-orange/25 shadow-glow-sm"
+                      : "border-brand-orange/60 bg-base"
+                  }`}
+                >
+                  <m.icon
+                    size={20}
+                    strokeWidth={1.75}
+                    className={m.accent ? "text-brand-amber" : "text-brand-orange"}
+                  />
+                </div>
+
+                {/* Era label pinned to axis */}
+                <span
+                  className={`mt-3 font-mono text-xs md:text-sm tracking-widest uppercase ${
+                    m.accent ? "text-brand-amber" : "text-cream/90"
+                  }`}
+                >
+                  {m.era}
+                </span>
+
+                {/* Card below year */}
+                <div
+                  className={`mt-3 w-full px-3 md:px-4 py-3 md:py-4 rounded-xl border flex-shrink-0 overflow-hidden ${
+                    m.accent
+                      ? "border-brand-orange/60 bg-elevated shadow-glow-sm"
+                      : "border-line bg-elevated/80"
+                  }`}
+                >
+                  <h3 className="text-sm md:text-base lg:text-lg font-bold tracking-tight text-white leading-snug">
                     {m.title}
                   </h3>
                 </div>
-                <p className="relative text-sm md:text-base text-cream/75 leading-relaxed">
-                  {m.body}
-                </p>
-              </div>
-            </motion.div>
-          ))}
+              </motion.div>
+            ))}
+          </div>
         </div>
 
         {/* Acceleration callout */}
@@ -121,7 +114,7 @@ export default function SlideTimeline({ active }: Props) {
           initial={{ opacity: 0 }}
           animate={active ? { opacity: 1 } : { opacity: 0 }}
           transition={{ delay: 1.2 }}
-          className="mt-8 flex items-center justify-end gap-3 font-mono text-xs text-muted"
+          className="mt-10 flex items-center justify-end gap-3 font-mono text-xs text-cream/70"
         >
           <span className="h-[1px] w-12 bg-line" />
           <span>

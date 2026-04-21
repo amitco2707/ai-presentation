@@ -24,11 +24,11 @@
 
 @layer components {
   .slide {
-    @apply relative w-full h-screen flex items-center justify-center snap-start snap-always overflow-hidden;
+    @apply relative w-full h-screen max-h-screen flex items-center justify-center snap-start snap-always overflow-hidden;
   }
 
   .slide-inner {
-    @apply relative w-full max-w-7xl mx-auto px-8 md:px-16 py-16 z-10;
+    @apply relative w-full max-w-7xl mx-auto px-8 md:px-16 py-10 md:py-12 z-10 max-h-screen overflow-hidden;
   }
 
   .btn-ghost {

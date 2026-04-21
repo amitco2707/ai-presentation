@@ -26,7 +26,7 @@ export default function SlideShell({
   bare = false,
 }: Props) {
   return (
-    <div className={`slide-inner ${className}`}>
+    <div className={`slide-inner flex flex-col ${className}`}>
       {!bare && (
         <motion.header
           initial={false}
@@ -35,7 +35,7 @@ export default function SlideShell({
             hidden: { opacity: 0 },
             visible: { opacity: 1, transition: { staggerChildren: 0.1 } },
           }}
-          className="mb-10"
+          className="mb-5 md:mb-6 shrink-0"
         >
           {eyebrow && (
             <motion.div
@@ -43,7 +43,7 @@ export default function SlideShell({
                 hidden: { opacity: 0, y: 10 },
                 visible: { opacity: 1, y: 0 },
               }}
-              className="chip mb-5"
+              className="chip mb-3"
             >
               <span className="h-1 w-1 rounded-full bg-brand-orange animate-pulse" />
               {eyebrow}
@@ -70,14 +70,14 @@ export default function SlideShell({
                 hidden: { opacity: 0, y: 15 },
                 visible: { opacity: 1, y: 0 },
               }}
-              className="mt-4 text-lg md:text-xl text-muted max-w-3xl leading-relaxed"
+              className="mt-3 text-base md:text-lg text-cream/80 max-w-3xl leading-relaxed"
             >
               {subtitle}
             </motion.p>
           )}
         </motion.header>
       )}
-      {children}
+      <div className="flex-1 min-h-0 overflow-hidden">{children}</div>
     </div>
   );
 }

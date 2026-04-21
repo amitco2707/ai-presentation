@@ -1,6 +1,7 @@
 import {
   BookOpen,
   Boxes,
+  Brain,
   Cable,
   Code2,
   MessageSquare,
@@ -64,6 +65,13 @@ const TERMS = [
     description:
       "The skill of writing clear instructions. Better prompts, better answers.",
   },
+  {
+    icon: Brain,
+    term: "LLM",
+    short: "Large Language Model",
+    description:
+      "The AI brain trained on oceans of text — it predicts the next word to form coherent answers.",
+  },
 ];
 
 export default function Slide07_Glossary({ active }: Props) {
@@ -72,7 +80,7 @@ export default function Slide07_Glossary({ active }: Props) {
       active={active}
       eyebrow="Chapter 09 — The glossary"
       title={<>The words you'll <span className="gradient-text">keep hearing.</span></>}
-      subtitle="Seven terms that unlock every conversation about modern AI. Hover any card."
+      subtitle="Eight terms that unlock every conversation about modern AI. Hover any card."
     >
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-5">
         {TERMS.map((t, i) => (

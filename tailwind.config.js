@@ -13,7 +13,7 @@ export default {
           rust: "#B8623A",
         },
         cream: "#F4E4D0",
-        muted: "#8a8580",
+        muted: "#c9c3ba",
         line: "#2a2825",
       },
       fontFamily: {
@@ -22,7 +22,7 @@ export default {
       },
       fontSize: {
         "display-xl": ["clamp(3rem, 8vw, 7.5rem)", { lineHeight: "0.95", letterSpacing: "-0.04em" }],
-        display: ["clamp(2.5rem, 6vw, 5.5rem)", { lineHeight: "1.0", letterSpacing: "-0.03em" }],
+        display: ["clamp(2rem, 4.5vw, 4rem)", { lineHeight: "1.05", letterSpacing: "-0.03em" }],
         headline: ["clamp(1.75rem, 3.5vw, 3rem)", { lineHeight: "1.1", letterSpacing: "-0.02em" }],
       },
       boxShadow: {
