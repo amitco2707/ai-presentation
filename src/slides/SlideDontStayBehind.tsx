@@ -31,7 +31,7 @@ export default function SlideDontStayBehind({ active }: Props) {
   return (
     <SlideShell
       active={active}
-      eyebrow="Chapter 18 — The manifesto"
+      eyebrow="Chapter 18 — Manifesto"
       title={
         <>
           Don't <span className="gradient-text">stay behind.</span>

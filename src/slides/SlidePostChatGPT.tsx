@@ -33,7 +33,7 @@ export default function SlidePostChatGPT({ active }: Props) {
   return (
     <SlideShell
       active={active}
-      eyebrow="Chapter 03 — After ChatGPT"
+      eyebrow="Chapter 03 — Post-ChatGPT"
       title={<>One release. <span className="gradient-text">A global shift.</span></>}
       subtitle="November 2022 — the first public LLM launched. AI stopped being a research topic and became a tool anyone could hold."
     >

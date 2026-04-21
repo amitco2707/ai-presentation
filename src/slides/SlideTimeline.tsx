@@ -26,7 +26,7 @@ const MILESTONES = [
     accent: false,
   },
   {
-    era: "2020 — 2026",
+    era: "2022 — 2026",
     icon: Rocket,
     title: "Generative AI everywhere",
     accent: true,
@@ -37,7 +37,7 @@ export default function SlideTimeline({ active }: Props) {
   return (
     <SlideShell
       active={active}
-      eyebrow="Chapter 02 — How we got here"
+      eyebrow="Chapter 02 — Timeline"
       title={<>70 years. <span className="gradient-text">Then 4 years that changed everything.</span></>}
       subtitle="Most of AI history was slow. The curve didn't go vertical until the last decade — and it hasn't stopped since."
     >

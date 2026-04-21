@@ -56,7 +56,7 @@ export default function SlideUseCases({ active }: Props) {
   return (
     <SlideShell
       active={active}
-      eyebrow="Chapter 08 — In the wild"
+      eyebrow="Chapter 10 — Use Cases"
       title={<>Where it <span className="gradient-text">already lives</span>.</>}
       subtitle="Six of thousands. Agents are already doing the job across every function — not as demos, as production tools."
     >

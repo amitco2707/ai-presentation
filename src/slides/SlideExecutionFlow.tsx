@@ -86,7 +86,7 @@ export default function SlideExecutionFlow({ active }: Props) {
   return (
     <SlideShell
       active={active}
-      eyebrow="Chapter 16 — Live simulation"
+      eyebrow="Chapter 15 — Execution Flow"
       title={
         <>
           Claude Code: <span className="gradient-text">Real-World Execution Flow</span>

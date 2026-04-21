@@ -41,7 +41,7 @@ export default function SlideVibeCoding({ active }: Props) {
   return (
     <SlideShell
       active={active}
-      eyebrow="Chapter 17 — Vibe Coding"
+      eyebrow="Chapter 16 — Vibe Coding"
       title={<>You set the direction. <span className="gradient-text">The agent does the rest.</span></>}
       subtitle="Vibe Coding is the emerging practice of building software through intent, not implementation — and it's changing who gets to build."
     >
@@ -97,7 +97,7 @@ export default function SlideVibeCoding({ active }: Props) {
               <h4 className="text-base md:text-lg font-bold text-white tracking-tight leading-tight mb-1">
                 {p.title}
               </h4>
-              <p className="text-sm text-cream/80 leading-relaxed">{p.body}</p>
+              <p className="text-sm leading-relaxed" style={{ color: "#f1f5f9" }}>{p.body}</p>
             </div>
           </motion.div>
         ))}
@@ -110,8 +110,8 @@ export default function SlideVibeCoding({ active }: Props) {
         transition={{ delay: 1.0 }}
         className="mt-4 p-4 rounded-xl border border-brand-orange/40 bg-gradient-to-r from-brand-orange/10 to-transparent"
       >
-        <p className="text-sm md:text-base text-white leading-relaxed">
-          <span className="text-brand-amber font-semibold">The new skill —</span>{" "}
+        <p className="text-sm md:text-base leading-relaxed" style={{ color: "#f1f5f9" }}>
+          <span style={{ color: "#F0B27A", fontWeight: 600 }}>The new skill — </span>
           not writing perfect code, but writing perfect <em>context</em>: requirements, constraints, and clear signals of what "done" looks like.
         </p>
       </motion.div>

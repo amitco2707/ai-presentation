@@ -40,7 +40,7 @@ export default function Slide08_ClaudeCode({ active }: Props) {
   return (
     <SlideShell
       active={active}
-      eyebrow="Chapter 11 — Meet Claude Code"
+      eyebrow="Chapter 12 — Claude Code"
       title={<>The agent that <span className="gradient-text">gets things done.</span></>}
       subtitle="A terminal-based teammate that works inside the developer's own environment."
     >

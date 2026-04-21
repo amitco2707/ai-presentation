@@ -8,15 +8,14 @@ import SlidePostChatGPT from "./slides/SlidePostChatGPT";
 import Slide03_Hierarchy from "./slides/Slide03_Hierarchy";
 import Slide04_NeuralNetworks from "./slides/Slide04_NeuralNetworks";
 import Slide05_MedicalImaging from "./slides/Slide05_MedicalImaging";
+import Slide07_Glossary from "./slides/Slide07_Glossary";
+import SlideHowLLMsWork from "./slides/SlideHowLLMsWork";
 import Slide06_LLMvsAgentic from "./slides/Slide06_LLMvsAgentic";
 import SlideUseCases from "./slides/SlideUseCases";
-import Slide07_Glossary from "./slides/Slide07_Glossary";
 import SlideAnthropic from "./slides/SlideAnthropic";
 import Slide08_ClaudeCode from "./slides/Slide08_ClaudeCode";
 import SlideClaudeCodeDeepDive from "./slides/SlideClaudeCodeDeepDive";
 import Slide09_Capabilities from "./slides/Slide09_Capabilities";
-import Slide10_ModelEcosystem from "./slides/Slide10_ModelEcosystem";
-import SlideCodeVsCoworker from "./slides/SlideCodeVsCoworker";
 import SlideExecutionFlow from "./slides/SlideExecutionFlow";
 import SlideVibeCoding from "./slides/SlideVibeCoding";
 import SlideAINative from "./slides/SlideAINative";
@@ -24,27 +23,26 @@ import SlideDontStayBehind from "./slides/SlideDontStayBehind";
 import Slide11_Outro from "./slides/Slide11_Outro";
 
 const SLIDES = [
-  { id: "title", label: "Title", Component: Slide01_Title },
-  { id: "basics", label: "The Basics", Component: Slide02_Basics },
-  { id: "timeline", label: "Timeline", Component: SlideTimeline },
-  { id: "post-chatgpt", label: "Post-ChatGPT", Component: SlidePostChatGPT },
-  { id: "hierarchy", label: "Hierarchy", Component: Slide03_Hierarchy },
-  { id: "neural", label: "Neural Networks", Component: Slide04_NeuralNetworks },
-  { id: "medical", label: "Medical Imaging", Component: Slide05_MedicalImaging },
-  { id: "glossary", label: "Glossary", Component: Slide07_Glossary },
-  { id: "llm-vs-agent", label: "LLM vs Agentic", Component: Slide06_LLMvsAgentic },
-  { id: "use-cases", label: "Use Cases", Component: SlideUseCases },
-  { id: "anthropic", label: "Anthropic", Component: SlideAnthropic },
-  { id: "claude-code", label: "Claude Code", Component: Slide08_ClaudeCode },
-  { id: "claude-code-deep", label: "Keys to the Machine", Component: SlideClaudeCodeDeepDive },
-  { id: "capabilities", label: "Capabilities", Component: Slide09_Capabilities },
-  { id: "ecosystem", label: "Ecosystem", Component: Slide10_ModelEcosystem },
-  { id: "code-vs-coworker", label: "Code vs Coworker", Component: SlideCodeVsCoworker },
-  { id: "execution-flow", label: "Execution Flow", Component: SlideExecutionFlow },
-  { id: "vibe-coding", label: "Vibe Coding", Component: SlideVibeCoding },
-  { id: "ai-native", label: "AI-Native", Component: SlideAINative },
-  { id: "dont-stay-behind", label: "Manifesto", Component: SlideDontStayBehind },
-  { id: "outro", label: "Outro", Component: Slide11_Outro },
+  { id: "title",           label: "Title",            Component: Slide01_Title },
+  { id: "basics",          label: "The Basics",       Component: Slide02_Basics },
+  { id: "timeline",        label: "Timeline",         Component: SlideTimeline },
+  { id: "post-chatgpt",    label: "Post-ChatGPT",     Component: SlidePostChatGPT },
+  { id: "hierarchy",       label: "Hierarchy",        Component: Slide03_Hierarchy },
+  { id: "neural",          label: "Neural Networks",  Component: Slide04_NeuralNetworks },
+  { id: "medical",         label: "Medical Imaging",  Component: Slide05_MedicalImaging },
+  { id: "glossary",        label: "Glossary",         Component: Slide07_Glossary },
+  { id: "how-llms-work",   label: "How LLMs Work",   Component: SlideHowLLMsWork },
+  { id: "llm-vs-agent",    label: "LLM vs Agentic",  Component: Slide06_LLMvsAgentic },
+  { id: "use-cases",       label: "Use Cases",        Component: SlideUseCases },
+  { id: "anthropic",       label: "Anthropic",        Component: SlideAnthropic },
+  { id: "claude-code",     label: "Claude Code",      Component: Slide08_ClaudeCode },
+  { id: "claude-code-deep",label: "Keys to Machine", Component: SlideClaudeCodeDeepDive },
+  { id: "capabilities",    label: "Capabilities",     Component: Slide09_Capabilities },
+  { id: "execution-flow",  label: "Execution Flow",   Component: SlideExecutionFlow },
+  { id: "vibe-coding",     label: "Vibe Coding",      Component: SlideVibeCoding },
+  { id: "ai-native",       label: "AI-Native",        Component: SlideAINative },
+  { id: "dont-stay-behind",label: "Manifesto",        Component: SlideDontStayBehind },
+  { id: "outro",           label: "Outro",            Component: Slide11_Outro },
 ] as const;
 
 export default function App() {

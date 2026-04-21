@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Code2, Eye, GitBranch, Layers, Orbit, Terminal } from "lucide-react";
+import { Code2, Orbit, Terminal } from "lucide-react";
 import SlideShell from "../components/SlideShell";
 
 interface Props {
@@ -31,29 +31,12 @@ const COMPARISON = [
   },
 ];
 
-const POWERS = [
-  {
-    icon: Eye,
-    title: "Full codebase vision",
-    body: "The model indexes every file, symbol, and import. It understands your project the way a senior engineer would after a month on the team — instantly.",
-  },
-  {
-    icon: Layers,
-    title: "Native multi-file editing",
-    body: "Not copy-paste into a chat box. The agent opens files, writes changes, and saves them — all without leaving the IDE surface.",
-  },
-  {
-    icon: GitBranch,
-    title: "Context that persists",
-    body: "Every edit, every decision, every conversation happens inside one environment. Nothing is lost between the AI and your code.",
-  },
-];
 
 export default function SlideAINative({ active }: Props) {
   return (
     <SlideShell
       active={active}
-      eyebrow="Chapter 18 — The environment is changing"
+      eyebrow="Chapter 17 — AI-Native"
       title={<>The AI doesn't live next door. <span className="gradient-text">It lives inside.</span></>}
       subtitle="AI-Native Workspaces move beyond external tools and plugins. The entire IDE is built from the ground up around the agent's ability to see, index, and edit your codebase in real-time."
     >
@@ -107,37 +90,6 @@ export default function SlideAINative({ active }: Props) {
                   </li>
                 ))}
               </ul>
-            </div>
-          </motion.div>
-        ))}
-      </div>
-
-      {/* Three powers */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4">
-        {POWERS.map((pw, i) => (
-          <motion.div
-            key={pw.title}
-            initial={{ opacity: 0, y: 16 }}
-            animate={active ? { opacity: 1, y: 0 } : { opacity: 0, y: 16 }}
-            transition={{ delay: 0.65 + i * 0.12, type: "spring", damping: 22 }}
-            className="p-4 rounded-xl border border-[#2a2825] bg-[#141414] flex gap-3"
-          >
-            <div className="shrink-0 h-9 w-9 rounded-lg bg-brand-orange/15 border border-brand-orange/35 flex items-center justify-center text-brand-amber">
-              <pw.icon size={16} strokeWidth={1.75} />
-            </div>
-            <div>
-              <h4
-                className="text-sm font-bold tracking-tight mb-1"
-                style={{ color: "#ffffff" }}
-              >
-                {pw.title}
-              </h4>
-              <p
-                className="text-xs leading-relaxed"
-                style={{ color: "#f1f5f9" }}
-              >
-                {pw.body}
-              </p>
             </div>
           </motion.div>
         ))}
