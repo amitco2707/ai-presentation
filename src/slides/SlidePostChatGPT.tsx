@@ -20,7 +20,7 @@ const IMPACTS = [
   {
     icon: Globe,
     label: "Global shift",
-    body: "Every country, every industry, every classroom started asking the same question: what does my work look like with AI in it?",
+    body: "Every country, every industry, every classroom started asking: what does my work look like with AI in it?",
   },
   {
     icon: Zap,
@@ -45,17 +45,23 @@ export default function SlidePostChatGPT({ active }: Props) {
             animate={active ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ delay: 0.4 + i * 0.12, type: "spring", damping: 22 }}
             whileHover={{ y: -4 }}
-            className="group p-5 md:p-6 rounded-xl border border-line bg-elevated hover:border-brand-orange/50 hover:shadow-glow-sm transition-all overflow-hidden"
+            className="group p-5 md:p-6 rounded-xl border border-[#2a2825] bg-[#141414] hover:border-brand-orange/50 hover:shadow-glow-sm transition-all overflow-hidden"
           >
             <div className="flex items-center gap-3 mb-3">
               <div className="h-11 w-11 rounded-lg bg-brand-orange/15 border border-brand-orange/40 flex items-center justify-center text-brand-amber shrink-0">
                 <c.icon size={20} strokeWidth={1.75} />
               </div>
-              <h4 className="text-lg md:text-xl font-bold text-white tracking-tight">
+              <h4
+                className="text-lg md:text-xl font-bold tracking-tight"
+                style={{ color: "#ffffff" }}
+              >
                 {c.label}
               </h4>
             </div>
-            <p className="text-sm md:text-base text-cream/85 leading-relaxed">
+            <p
+              className="text-sm md:text-base leading-relaxed"
+              style={{ color: "#f1f5f9" }}
+            >
               {c.body}
             </p>
           </motion.div>
@@ -66,10 +72,13 @@ export default function SlidePostChatGPT({ active }: Props) {
         initial={{ opacity: 0, y: 10 }}
         animate={active ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}
         transition={{ delay: 1.05 }}
-        className="mt-6 p-4 md:p-5 rounded-xl border border-brand-orange/40 bg-gradient-to-br from-brand-orange/10 to-transparent"
+        className="mt-5 p-4 md:p-5 rounded-xl border border-brand-orange/40 bg-brand-orange/10"
       >
-        <p className="text-sm md:text-base text-white leading-relaxed">
-          <span className="font-semibold text-brand-amber">The bottom line —</span>{" "}
+        <p
+          className="text-sm md:text-base leading-relaxed"
+          style={{ color: "#ffffff" }}
+        >
+          <span style={{ color: "#F0B27A", fontWeight: 600 }}>The bottom line — </span>
           the first public LLM didn't just launch a product. It rewired public expectations for what software should be able to do.
         </p>
       </motion.div>
