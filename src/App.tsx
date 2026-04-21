@@ -75,17 +75,8 @@ export default function App() {
             key={id}
             onClick={() => goTo(index)}
             aria-label={`Go to ${label}`}
-            className="group relative flex items-center justify-end gap-3"
+            className="group relative flex items-center justify-end"
           >
-            <span
-              className={`text-[10px] uppercase tracking-widest font-medium transition-all duration-300 ${
-                activeIndex === index
-                  ? "text-brand-amber opacity-100"
-                  : "text-muted opacity-0 group-hover:opacity-100"
-              }`}
-            >
-              {label}
-            </span>
             <span
               className={`block h-[2px] transition-all duration-500 ${
                 activeIndex === index
