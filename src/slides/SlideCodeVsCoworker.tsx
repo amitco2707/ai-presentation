@@ -35,7 +35,7 @@ export default function SlideCodeVsCoworker({ active }: Props) {
         initial={{ opacity: 0, y: 20 }}
         animate={active ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
         transition={{ delay: 0.3, duration: 0.6 }}
-        className="rounded-2xl border border-line bg-elevated/50 backdrop-blur-xl overflow-hidden"
+        className="rounded-2xl border border-line bg-elevated shadow-card overflow-hidden"
       >
         {/* Table header */}
         <div className="grid grid-cols-[140px_1fr_1fr] md:grid-cols-[180px_1fr_1fr] border-b border-line">
@@ -71,15 +71,15 @@ export default function SlideCodeVsCoworker({ active }: Props) {
             transition={{ delay: 0.45 + i * 0.08, type: "spring", damping: 22, stiffness: 100 }}
             className={`grid grid-cols-[140px_1fr_1fr] md:grid-cols-[180px_1fr_1fr] ${
               i < ROWS.length - 1 ? "border-b border-line/60" : ""
-            } hover:bg-brand-orange/[0.02] transition-colors`}
+            } ${i % 2 === 1 ? "bg-panel/40" : ""} hover:bg-brand-orange/[0.05] transition-colors`}
           >
             <div className="px-5 py-4 md:py-5 font-mono text-[10px] md:text-xs uppercase tracking-widest text-muted flex items-center">
               {row.dim}
             </div>
-            <div className="px-5 py-4 md:py-5 border-l border-line text-sm md:text-base text-cream font-medium">
+            <div className="px-5 py-4 md:py-5 border-l border-line text-sm md:text-base text-cream font-semibold">
               {row.code}
             </div>
-            <div className="px-5 py-4 md:py-5 border-l border-line text-sm md:text-base text-cream font-medium">
+            <div className="px-5 py-4 md:py-5 border-l border-line text-sm md:text-base text-cream font-semibold">
               {row.coworker}
             </div>
           </motion.div>
