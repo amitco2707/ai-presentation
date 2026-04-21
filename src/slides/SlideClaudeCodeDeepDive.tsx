@@ -33,7 +33,7 @@ export default function SlideClaudeCodeDeepDive({ active }: Props) {
   return (
     <SlideShell
       active={active}
-      eyebrow="Chapter 09 — Keys to the machine"
+      eyebrow="Chapter 12 — Keys to the machine"
       title={<>A pair-engineer with <span className="gradient-text">keys to the build.</span></>}
       subtitle="Not autocomplete. Not a chatbot in a sidebar. An agent with real access — to your files, your shell, and your pipeline."
     >

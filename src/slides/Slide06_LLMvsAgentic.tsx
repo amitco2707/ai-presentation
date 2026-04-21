@@ -10,7 +10,7 @@ export default function Slide06_LLMvsAgentic({ active }: Props) {
   return (
     <SlideShell
       active={active}
-      eyebrow="Chapter 05 — What changed"
+      eyebrow="Chapter 07 — What changed"
       title={<>From <span className="gradient-text">talker</span> to <span className="gradient-text">doer</span>.</>}
       subtitle="The chat box was just the start. Modern AI doesn't only talk — it takes action."
     >

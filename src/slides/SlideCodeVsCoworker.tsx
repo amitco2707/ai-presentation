@@ -22,7 +22,7 @@ export default function SlideCodeVsCoworker({ active }: Props) {
   return (
     <SlideShell
       active={active}
-      eyebrow="Chapter 12 — Same ancestry, different rooms"
+      eyebrow="Chapter 15 — Same ancestry, different rooms"
       title={
         <>
           Claude Code <span className="text-muted font-light px-2">·</span>{" "}
@@ -76,10 +76,16 @@ export default function SlideCodeVsCoworker({ active }: Props) {
             <div className="px-5 py-4 md:py-5 font-mono text-[10px] md:text-xs uppercase tracking-widest text-muted flex items-center">
               {row.dim}
             </div>
-            <div className="px-5 py-4 md:py-5 border-l border-line text-sm md:text-base text-cream font-semibold">
+            <div
+              className="px-5 py-4 md:py-5 border-l border-line text-sm md:text-base font-semibold"
+              style={{ color: "#F4E4D0" }}
+            >
               {row.code}
             </div>
-            <div className="px-5 py-4 md:py-5 border-l border-line text-sm md:text-base text-cream font-semibold">
+            <div
+              className="px-5 py-4 md:py-5 border-l border-line text-sm md:text-base font-semibold"
+              style={{ color: "#F4E4D0" }}
+            >
               {row.coworker}
             </div>
           </motion.div>

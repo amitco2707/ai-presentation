@@ -28,7 +28,7 @@ export default function Slide05_MedicalImaging({ active }: Props) {
   return (
     <SlideShell
       active={active}
-      eyebrow="Chapter 04 — In the real world"
+      eyebrow="Chapter 06 — In the real world"
       title={<>A network that <span className="gradient-text">looks at scans.</span></>}
       subtitle="One concrete example: Neural Networks helping clinicians spot features in medical imaging."
     >

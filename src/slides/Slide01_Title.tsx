@@ -52,7 +52,7 @@ export default function Slide01_Title({ active }: Props) {
           initial={{ opacity: 0, y: 40 }}
           animate={active ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
           transition={{ delay: 0.4, type: "spring", damping: 20, stiffness: 90 }}
-          className="text-display-xl font-black tracking-tighter leading-none pr-4"
+          className="text-display-xl font-black tracking-tight leading-none pr-12"
         >
           AI for
           <br />
@@ -77,7 +77,7 @@ export default function Slide01_Title({ active }: Props) {
         >
           <div className="flex items-center gap-2">
             <span className="h-8 w-8 rounded-full bg-gradient-to-br from-brand-amber to-brand-rust flex items-center justify-center font-mono text-xs text-base font-bold">
-              15
+              20
             </span>
             <span>slides</span>
           </div>

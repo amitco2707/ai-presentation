@@ -70,7 +70,7 @@ export default function Slide07_Glossary({ active }: Props) {
   return (
     <SlideShell
       active={active}
-      eyebrow="Chapter 07 — The glossary"
+      eyebrow="Chapter 09 — The glossary"
       title={<>The words you'll <span className="gradient-text">keep hearing.</span></>}
       subtitle="Seven terms that unlock every conversation about modern AI. Hover any card."
     >

@@ -25,7 +25,7 @@ export default function Slide04_NeuralNetworks({ active }: Props) {
   return (
     <SlideShell
       active={active}
-      eyebrow="Chapter 03 — Under the hood"
+      eyebrow="Chapter 05 — Under the hood"
       title={<>How does it <span className="gradient-text">actually think?</span></>}
       subtitle="The engine behind modern AI is the Neural Network. Here's what it looks like."
     >

@@ -57,7 +57,7 @@ export default function Slide10_ModelEcosystem({ active }: Props) {
   return (
     <SlideShell
       active={active}
-      eyebrow="Chapter 11 — The ecosystem"
+      eyebrow="Chapter 14 — The ecosystem"
       title={<>Three models. <span className="gradient-text">Three jobs.</span></>}
       subtitle="Each one is built for a different kind of work. Pick the right one for the task."
     >
