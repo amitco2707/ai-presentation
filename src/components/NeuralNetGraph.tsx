@@ -155,7 +155,7 @@ export default function NeuralNetGraph({ active, width = 520, height = 380 }: Pr
               textAnchor="middle"
               className="font-mono"
               fontSize={10}
-              fill="#8a8580"
+              fill="#c9c3ba"
               letterSpacing="2"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}

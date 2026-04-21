@@ -59,7 +59,7 @@ export default function SlideShell({
                   transition: { type: "spring", damping: 22, stiffness: 110 },
                 },
               }}
-              className="text-display font-bold tracking-tight"
+              className="text-display font-bold tracking-tight text-cream"
             >
               {title}
             </motion.h1>

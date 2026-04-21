@@ -73,7 +73,7 @@ export default function Slide01_Title({ active }: Props) {
           initial={{ opacity: 0, y: 10 }}
           animate={active ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}
           transition={{ delay: 1.3 }}
-          className="mt-10 flex items-center gap-5 text-sm text-muted"
+          className="mt-10 flex items-center gap-5 text-sm text-cream/75"
         >
           <div className="flex items-center gap-2">
             <span className="h-8 w-8 rounded-full bg-gradient-to-br from-brand-amber to-brand-rust flex items-center justify-center font-mono text-xs text-base font-bold">

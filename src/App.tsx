@@ -18,6 +18,7 @@ import Slide09_Capabilities from "./slides/Slide09_Capabilities";
 import Slide10_ModelEcosystem from "./slides/Slide10_ModelEcosystem";
 import SlideCodeVsCoworker from "./slides/SlideCodeVsCoworker";
 import SlideExecutionFlow from "./slides/SlideExecutionFlow";
+import SlideVibeCoding from "./slides/SlideVibeCoding";
 import SlideAINative from "./slides/SlideAINative";
 import SlideDontStayBehind from "./slides/SlideDontStayBehind";
 import Slide11_Outro from "./slides/Slide11_Outro";
@@ -40,6 +41,7 @@ const SLIDES = [
   { id: "ecosystem", label: "Ecosystem", Component: Slide10_ModelEcosystem },
   { id: "code-vs-coworker", label: "Code vs Coworker", Component: SlideCodeVsCoworker },
   { id: "execution-flow", label: "Execution Flow", Component: SlideExecutionFlow },
+  { id: "vibe-coding", label: "Vibe Coding", Component: SlideVibeCoding },
   { id: "ai-native", label: "AI-Native", Component: SlideAINative },
   { id: "dont-stay-behind", label: "Manifesto", Component: SlideDontStayBehind },
   { id: "outro", label: "Outro", Component: Slide11_Outro },
