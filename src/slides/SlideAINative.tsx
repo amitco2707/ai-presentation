@@ -60,9 +60,7 @@ export default function SlideAINative({ active }: Props) {
             <div className="relative">
               <div className="flex items-center justify-between mb-3">
                 <div
-                  className={`flex items-center gap-2 text-xs font-mono uppercase tracking-widest ${
-                    col.dimmed ? "" : ""
-                  }`}
+                  className="flex items-center gap-2 text-xs font-mono uppercase tracking-widest"
                   style={{ color: col.dimmed ? "#c9c3ba" : "#F0B27A" }}
                 >
                   <col.icon size={14} strokeWidth={1.75} />
