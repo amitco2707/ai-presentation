@@ -253,17 +253,6 @@ export default function SlideClaudeEverywhere({ active }: Props) {
             ))}
           </div>
 
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={active ? { opacity: 1 } : { opacity: 0 }}
-            transition={{ delay: 1.1 }}
-            className="mt-3 font-mono text-[10px] leading-snug"
-            style={{ color: "#6b6b6b" }}
-          >
-            the bottleneck is no longer{" "}
-            <span style={{ color: "#ffffff" }}>skill</span> — it's{" "}
-            <span style={{ color: "#F0B27A" }}>knowing what to ask</span>
-          </motion.p>
         </div>
 
         {/* Right: Chrome browser animation */}

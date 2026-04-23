@@ -75,20 +75,6 @@ export default function SlideAnthropic({ active }: Props) {
         ))}
       </div>
 
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={active ? { opacity: 1 } : { opacity: 0 }}
-        transition={{ delay: 0.9 }}
-        className="mt-6 flex items-center justify-center gap-3 font-mono text-xs"
-        style={{ color: "#c9c3ba" }}
-      >
-        <span className="h-[1px] w-14 bg-[#2a2825]" />
-        <span>
-          the result: an LLM you can{" "}
-          <span style={{ color: "#F0B27A" }}>actually trust in the loop</span>
-        </span>
-        <span className="h-[1px] w-14 bg-[#2a2825]" />
-      </motion.div>
     </SlideShell>
   );
 }

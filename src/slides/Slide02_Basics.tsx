@@ -92,10 +92,6 @@ export default function Slide02_Basics({ active }: Props) {
             </div>
           </div>
 
-          <div className="font-mono text-xs text-muted flex items-center gap-3">
-            <span className="h-[1px] flex-1 bg-line" />
-            <span>ML, neural nets, deep learning — all of it sits inside this box</span>
-          </div>
         </motion.div>
       </div>
     </SlideShell>

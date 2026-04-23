@@ -102,20 +102,6 @@ export default function Slide02_Roadmap({ active }: Props) {
         ))}
       </div>
 
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={active ? { opacity: 1 } : { opacity: 0 }}
-        transition={{ delay: 1.2 }}
-        className="mt-5 flex items-center justify-center gap-3 font-mono text-xs"
-        style={{ color: "#c9c3ba" }}
-      >
-        <span className="h-[1px] w-12 bg-[#2a2825]" />
-        <span>
-          no prerequisites — just{" "}
-          <span style={{ color: "#F0B27A" }}>curiosity and a browser</span>
-        </span>
-        <span className="h-[1px] w-12 bg-[#2a2825]" />
-      </motion.div>
     </SlideShell>
   );
 }

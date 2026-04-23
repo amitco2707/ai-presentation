@@ -103,18 +103,6 @@ export default function SlideVibeCoding({ active }: Props) {
         ))}
       </div>
 
-      {/* Bottom callout */}
-      <motion.div
-        initial={{ opacity: 0, y: 8 }}
-        animate={active ? { opacity: 1, y: 0 } : { opacity: 0, y: 8 }}
-        transition={{ delay: 1.0 }}
-        className="mt-4 p-4 rounded-xl border border-brand-orange/40 bg-gradient-to-r from-brand-orange/10 to-transparent"
-      >
-        <p className="text-sm md:text-base leading-relaxed" style={{ color: "#F4E4D0" }}>
-          <span style={{ color: "#F0B27A", fontWeight: 600 }}>The new skill — </span>
-          not writing perfect code, but writing perfect <em>context</em>: requirements, constraints, and clear signals of what "done" looks like.
-        </p>
-      </motion.div>
     </SlideShell>
   );
 }

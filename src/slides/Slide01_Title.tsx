@@ -77,7 +77,7 @@ export default function Slide01_Title({ active }: Props) {
         >
           <div className="flex items-center gap-2">
             <span className="h-8 w-8 rounded-full bg-gradient-to-br from-brand-amber to-brand-rust flex items-center justify-center font-mono text-xs text-base font-bold">
-              20
+              22
             </span>
             <span>slides</span>
           </div>

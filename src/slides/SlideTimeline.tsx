@@ -105,19 +105,6 @@ export default function SlideTimeline({ active }: Props) {
           </div>
         </div>
 
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={active ? { opacity: 1 } : { opacity: 0 }}
-          transition={{ delay: 1.2 }}
-          className="mt-10 flex items-center justify-end gap-3 font-mono text-xs"
-          style={{ color: "#c9c3ba" }}
-        >
-          <span className="h-[1px] w-12 bg-[#2a2825]" />
-          <span>
-            <span style={{ color: "#F0B27A" }}>acceleration</span>
-            {" "}·{" "}the curve keeps bending
-          </span>
-        </motion.div>
       </div>
     </SlideShell>
   );

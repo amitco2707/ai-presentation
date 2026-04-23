@@ -134,20 +134,6 @@ export default function SlideClaudeDesktopVsCode({ active }: Props) {
         ))}
       </div>
 
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={active ? { opacity: 1 } : { opacity: 0 }}
-        transition={{ delay: 1.3 }}
-        className="mt-4 flex items-center justify-center gap-3 font-mono text-xs"
-        style={{ color: "#c9c3ba" }}
-      >
-        <span className="h-[1px] w-12 bg-[#2a2825]" />
-        <span>
-          Desktop sees your world —{" "}
-          <span style={{ color: "#F0B27A" }}>Code changes it</span>
-        </span>
-        <span className="h-[1px] w-12 bg-[#2a2825]" />
-      </motion.div>
     </SlideShell>
   );
 }

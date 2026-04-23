@@ -68,20 +68,6 @@ export default function SlidePostChatGPT({ active }: Props) {
         ))}
       </div>
 
-      <motion.div
-        initial={{ opacity: 0, y: 10 }}
-        animate={active ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}
-        transition={{ delay: 1.05 }}
-        className="mt-5 p-4 md:p-5 rounded-xl border border-brand-orange/40 bg-brand-orange/10"
-      >
-        <p
-          className="text-sm md:text-base leading-relaxed"
-          style={{ color: "#ffffff" }}
-        >
-          <span style={{ color: "#F0B27A", fontWeight: 600 }}>The bottom line — </span>
-          the first public LLM didn't just launch a product. It rewired public expectations for what software should be able to do.
-        </p>
-      </motion.div>
     </SlideShell>
   );
 }

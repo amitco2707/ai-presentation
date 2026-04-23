@@ -197,19 +197,6 @@ export default function SlideHowLLMsWork({ active }: Props) {
             </p>
           </motion.div>
 
-          {/* Stacked predictions note */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={active ? { opacity: 1 } : { opacity: 0 }}
-            transition={{ delay: 1.0 }}
-            className="flex items-start gap-2 font-mono text-[10px]"
-            style={{ color: "#c9c3ba" }}
-          >
-            <span className="h-[1px] w-6 bg-[#2a2825] mt-1.5 shrink-0" />
-            <span>
-              A full response chains thousands of these predictions — fluency comes from dense patterns, not consciousness.
-            </span>
-          </motion.div>
         </div>
       </div>
     </SlideShell>
