@@ -2,6 +2,8 @@
 
 An interactive, web-based presentation built as a single-page React app. Framer Motion animations, Tailwind CSS, deployed to GitHub Pages.
 
+This presentation was designed for my team at work. It is intended to explain basic AI concepts in a simple and clear manner, while focusing significantly on Anthropic and Claude Code.
+
 ## 🌐 Live presentation
 
 **[https://amitco2707.github.io/ai-presentation/](https://amitco2707.github.io/ai-presentation/)**
