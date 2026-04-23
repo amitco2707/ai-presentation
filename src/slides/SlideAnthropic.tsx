@@ -67,7 +67,7 @@ export default function SlideAnthropic({ active }: Props) {
             </h3>
             <p
               className="relative text-sm md:text-base leading-relaxed"
-              style={{ color: "#f1f5f9" }}
+              style={{ color: "#F4E4D0" }}
             >
               {p.body}
             </p>

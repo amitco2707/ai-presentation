@@ -60,7 +60,7 @@ export default function SlidePostChatGPT({ active }: Props) {
             </div>
             <p
               className="text-sm md:text-base leading-relaxed"
-              style={{ color: "#f1f5f9" }}
+              style={{ color: "#F4E4D0" }}
             >
               {c.body}
             </p>

@@ -112,7 +112,7 @@ export default function SlideClaudeDesktopVsCode({ active }: Props) {
                       className="shrink-0 mt-0.5"
                       style={{ color: col.accent }}
                     />
-                    <span className="text-sm leading-snug" style={{ color: "#f1f5f9" }}>
+                    <span className="text-sm leading-snug" style={{ color: "#F4E4D0" }}>
                       {pt.text}
                     </span>
                   </motion.li>

@@ -97,7 +97,7 @@ export default function SlideVibeCoding({ active }: Props) {
               <h4 className="text-base md:text-lg font-bold text-white tracking-tight leading-tight mb-1">
                 {p.title}
               </h4>
-              <p className="text-sm leading-relaxed" style={{ color: "#f1f5f9" }}>{p.body}</p>
+              <p className="text-sm leading-relaxed" style={{ color: "#F4E4D0" }}>{p.body}</p>
             </div>
           </motion.div>
         ))}
@@ -110,7 +110,7 @@ export default function SlideVibeCoding({ active }: Props) {
         transition={{ delay: 1.0 }}
         className="mt-4 p-4 rounded-xl border border-brand-orange/40 bg-gradient-to-r from-brand-orange/10 to-transparent"
       >
-        <p className="text-sm md:text-base leading-relaxed" style={{ color: "#f1f5f9" }}>
+        <p className="text-sm md:text-base leading-relaxed" style={{ color: "#F4E4D0" }}>
           <span style={{ color: "#F0B27A", fontWeight: 600 }}>The new skill — </span>
           not writing perfect code, but writing perfect <em>context</em>: requirements, constraints, and clear signals of what "done" looks like.
         </p>

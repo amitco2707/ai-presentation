@@ -109,7 +109,7 @@ export default function SlideHowLLMsWork({ active }: Props) {
             </p>
             {PREDICTIONS.map((p, i) => (
               <div key={p.word} className="flex items-center gap-3">
-                <span className="font-mono text-sm w-14 text-right shrink-0" style={{ color: "#f1f5f9" }}>
+                <span className="font-mono text-sm w-14 text-right shrink-0" style={{ color: "#F4E4D0" }}>
                   {p.word}
                 </span>
                 <div className="flex-1 h-4 rounded-full overflow-hidden" style={{ backgroundColor: "#1c1c1c" }}>
@@ -136,7 +136,7 @@ export default function SlideHowLLMsWork({ active }: Props) {
             className="rounded-xl border p-4"
             style={{ borderColor: "rgba(217,119,87,0.45)", backgroundColor: "rgba(217,119,87,0.08)" }}
           >
-            <p className="text-sm leading-relaxed" style={{ color: "#f1f5f9" }}>
+            <p className="text-sm leading-relaxed" style={{ color: "#F4E4D0" }}>
               <span style={{ color: "#F0B27A", fontWeight: 600 }}>Implication: </span>
               LLMs can be confidently wrong because they don't know what they don't know.
               Human direction, context, and verification are always required.
@@ -164,7 +164,7 @@ export default function SlideHowLLMsWork({ active }: Props) {
                 <h4 className="font-bold text-sm tracking-tight mb-1" style={{ color: "#ffffff" }}>
                   {item.title}
                 </h4>
-                <p className="text-sm leading-relaxed" style={{ color: "#f1f5f9" }}>
+                <p className="text-sm leading-relaxed" style={{ color: "#F4E4D0" }}>
                   {item.body}
                 </p>
               </div>
@@ -190,7 +190,7 @@ export default function SlideHowLLMsWork({ active }: Props) {
             <h4 className="font-bold text-sm tracking-tight mb-2" style={{ color: "#ffffff" }}>
               Plausible ≠ Factual
             </h4>
-            <p className="text-sm leading-relaxed" style={{ color: "#f1f5f9" }}>
+            <p className="text-sm leading-relaxed" style={{ color: "#F4E4D0" }}>
               Because the model optimises for the <em>most probable</em> next word — not the <em>most true</em> one — it has no internal "fact database" to check against.
               It can generate a fluent, confident answer that is completely wrong.
               That is a hallucination: statistically plausible, factually false.
