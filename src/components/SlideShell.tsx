@@ -10,6 +10,8 @@ interface Props {
   className?: string;
   /** Hide default header; render entirely custom */
   bare?: boolean;
+  /** Chapter part label, e.g. "Part 1: The Foundations" */
+  part?: string;
 }
 
 /**
@@ -24,6 +26,7 @@ export default function SlideShell({
   children,
   className = "",
   bare = false,
+  part,
 }: Props) {
   return (
     <div className={`slide-inner flex flex-col ${className}`}>
@@ -37,6 +40,21 @@ export default function SlideShell({
           }}
           className="mb-5 md:mb-6 shrink-0"
         >
+          {part && (
+            <motion.div
+              variants={{
+                hidden: { opacity: 0, y: 8 },
+                visible: { opacity: 1, y: 0 },
+              }}
+              className="flex items-center gap-3 mb-3"
+            >
+              <span className="h-[1px] w-4 bg-brand-orange/50" />
+              <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-brand-orange/80">
+                {part}
+              </span>
+              <span className="h-[1px] flex-1 bg-brand-orange/20" />
+            </motion.div>
+          )}
           {eyebrow && (
             <motion.div
               variants={{

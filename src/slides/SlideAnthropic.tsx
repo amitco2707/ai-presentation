@@ -31,6 +31,7 @@ export default function SlideAnthropic({ active }: Props) {
   return (
     <SlideShell
       active={active}
+      part="Part 3: The Future of Work"
       eyebrow="Chapter 11 — Anthropic"
       title={<>Anthropic bent the curve on <span className="gradient-text">how you build AI.</span></>}
       subtitle="Same race as everyone else — different rules. Safety as a first-class product feature."

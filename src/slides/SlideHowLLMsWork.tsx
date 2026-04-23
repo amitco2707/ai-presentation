@@ -39,6 +39,7 @@ export default function SlideHowLLMsWork({ active }: Props) {
   return (
     <SlideShell
       active={active}
+      part="Part 2: The Intelligence Engine"
       eyebrow="Chapter 07 — How LLMs Work"
       title={<>Not thinking. <span className="gradient-text">Predicting.</span></>}
       subtitle="An LLM is a probabilistic model — it calculates which word is statistically most likely to come next, over and over, billions of times."

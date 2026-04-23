@@ -18,6 +18,7 @@ export default function Slide02_Basics({ active }: Props) {
   return (
     <SlideShell
       active={active}
+      part="Part 1: The Foundations"
       eyebrow="Chapter 01 — The Basics"
       title={<>Start here. <span className="gradient-text">One simple idea.</span></>}
       subtitle="Before we get into layers and loops — the whole thing rests on a single concept. Let's make it stick."
