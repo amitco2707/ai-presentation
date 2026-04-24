@@ -22,7 +22,7 @@ const PARTS = [
     number: "03",
     title: "The Future of Work",
     color: "#B8623A",
-    topics: ["Anthropic & the safety-first bet", "Claude Code — the terminal mechanic", "Claude desktop app — the screen-aware co-pilot", "Real integrations you can use today"],
+    topics: ["Anthropic & the safety-first bet", "Claude Code — the terminal mechanic", "Claude desktop app — Chat, Cowork & Code in one place", "Add-ins: Claude inside the apps you already use"],
   },
 ];
 

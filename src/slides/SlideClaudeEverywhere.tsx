@@ -222,16 +222,16 @@ export default function SlideClaudeEverywhere({ active }: Props) {
   return (
     <SlideShell
       active={active}
-      eyebrow="Chapter 17 — Claude is Everywhere"
-      title={<>No longer <span className="gradient-text">trapped in a tab.</span></>}
-      subtitle="Claude now lives inside the tools you already use — no developer required. Repetitive work that used to take an hour can be automated in seconds."
+      eyebrow="Chapter 17 — Claude Inside Your Apps"
+      title={<>Claude comes to you. <span className="gradient-text">No new app needed.</span></>}
+      subtitle="Claude shows up as a panel inside Word, Excel, Gmail, Chrome — wherever you already are. A daily work partner for everyone, right inside the tools they already use."
     >
       <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.15fr] gap-5 items-start">
 
         {/* Left: integration grid */}
         <div>
           <p className="font-mono text-[10px] uppercase tracking-widest mb-3" style={{ color: "#F0B27A" }}>
-            Connects to the tools you already use
+            Add-ins that bring Claude into the app you're already in
           </p>
           <div className="grid grid-cols-2 gap-2.5">
             {INTEGRATIONS.map((item, i) => (
