@@ -64,7 +64,7 @@ export default function SlideVibeCoding({ active }: Props) {
             animate={active ? { opacity: 1, y: 0 } : { opacity: 0, y: 18 }}
             transition={{ delay: 0.35 + i * 0.12, type: "spring", damping: 22, stiffness: 110 }}
             whileHover={{ y: -3 }}
-            className="group relative p-4 md:p-5 rounded-xl border border-line bg-elevated overflow-hidden hover:border-brand-orange/50 hover:shadow-glow-sm transition-all flex gap-4"
+            className="group relative p-4 md:p-5 rounded-xl border border-[#2a2825] bg-[#141414] overflow-hidden hover:border-[#D97757]/50 hover:shadow-glow-sm transition-all flex gap-4"
           >
             {/* Ambient glow */}
             <div

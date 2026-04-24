@@ -25,7 +25,7 @@ const COLUMNS = [
   {
     icon: Monitor,
     role: "The Co-Pilot",
-    name: "Claude Desktop",
+    name: "Claude desktop app",
     tagline: "Sitting next to you. Watching. Ready.",
     accent: "#F0B27A",
     accentBg: "rgba(217,119,87,0.12)",
@@ -45,7 +45,7 @@ export default function SlideClaudeDesktopVsCode({ active }: Props) {
       active={active}
       eyebrow="Chapter 18 — Two Ways to Use Claude"
       title={<>Same intelligence. <span className="gradient-text">Different cockpit.</span></>}
-      subtitle="Claude Code and Claude Desktop solve different problems — pick the one that fits your workflow, or use both."
+      subtitle="Claude Code and the Claude desktop app solve different problems — pick the one that fits your workflow, or use both."
     >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5">
         {COLUMNS.map((col, i) => (

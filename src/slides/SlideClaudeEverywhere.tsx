@@ -231,7 +231,7 @@ export default function SlideClaudeEverywhere({ active }: Props) {
         {/* Left: integration grid */}
         <div>
           <p className="font-mono text-[10px] uppercase tracking-widest mb-3" style={{ color: "#F0B27A" }}>
-            Native integrations — no code needed
+            Connects to the tools you already use
           </p>
           <div className="grid grid-cols-2 gap-2.5">
             {INTEGRATIONS.map((item, i) => (
