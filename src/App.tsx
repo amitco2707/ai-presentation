@@ -102,15 +102,15 @@ export default function App() {
       </div>
 
       {/* Brand tag */}
-      <div className="fixed top-5 left-6 z-40 flex items-center gap-2">
-        <div className="h-2 w-2 rounded-full bg-brand-orange animate-pulse" />
-        <span className="font-mono text-xs text-muted tracking-widest uppercase">
+      <div className="fixed top-3 md:top-5 left-3 md:left-6 z-40 flex items-center gap-2">
+        <div className="h-1.5 w-1.5 md:h-2 md:w-2 rounded-full bg-brand-orange animate-pulse" />
+        <span className="font-mono text-[10px] md:text-xs text-muted tracking-widest uppercase">
           AI · Zero → Hero
         </span>
       </div>
 
       {/* Slide counter */}
-      <div className="fixed top-5 right-6 z-40 font-mono text-xs text-muted tracking-wider">
+      <div className="fixed top-3 md:top-5 right-3 md:right-6 z-40 font-mono text-[10px] md:text-xs text-muted tracking-wider">
         <span className="text-brand-amber">
           {String(activeIndex + 1).padStart(2, "0")}
         </span>
@@ -119,22 +119,22 @@ export default function App() {
       </div>
 
       {/* Bottom nav arrows */}
-      <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-40 flex items-center gap-2">
+      <div className="fixed bottom-3 md:bottom-6 left-1/2 -translate-x-1/2 z-40 flex items-center gap-1.5 md:gap-2">
         <button
           onClick={prev}
           disabled={activeIndex === 0}
-          className="h-10 w-10 flex items-center justify-center rounded-full border border-line hover:border-brand-orange hover:bg-brand-orange/10 disabled:opacity-30 disabled:cursor-not-allowed transition-all"
+          className="h-8 w-8 md:h-10 md:w-10 flex items-center justify-center rounded-full border border-line hover:border-brand-orange hover:bg-brand-orange/10 disabled:opacity-30 disabled:cursor-not-allowed transition-all"
           aria-label="Previous slide"
         >
-          <ChevronUp size={16} />
+          <ChevronUp size={14} />
         </button>
         <button
           onClick={next}
           disabled={activeIndex === SLIDES.length - 1}
-          className="h-10 w-10 flex items-center justify-center rounded-full border border-line hover:border-brand-orange hover:bg-brand-orange/10 disabled:opacity-30 disabled:cursor-not-allowed transition-all"
+          className="h-8 w-8 md:h-10 md:w-10 flex items-center justify-center rounded-full border border-line hover:border-brand-orange hover:bg-brand-orange/10 disabled:opacity-30 disabled:cursor-not-allowed transition-all"
           aria-label="Next slide"
         >
-          <ChevronDown size={16} />
+          <ChevronDown size={14} />
         </button>
       </div>
 
@@ -146,7 +146,7 @@ export default function App() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 10 }}
             transition={{ delay: 2.5 }}
-            className="fixed bottom-20 left-1/2 -translate-x-1/2 z-30 flex flex-col items-center gap-2 text-muted"
+            className="fixed bottom-[4.5rem] md:bottom-20 left-1/2 -translate-x-1/2 z-30 flex flex-col items-center gap-2 text-muted"
           >
             <span className="text-[10px] uppercase tracking-[0.3em]">Scroll</span>
             <motion.div

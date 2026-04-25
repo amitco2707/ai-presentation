@@ -133,7 +133,7 @@ export default function SlideExecutionFlow({ active }: Props) {
             script={SCRIPT}
             active={active}
             charSpeed={22}
-            className="[&>div:last-child]:!max-h-[520px] [&>div:last-child]:!min-h-[480px]"
+            className="[&>div:last-child]:!max-h-[260px] md:[&>div:last-child]:!max-h-[520px] [&>div:last-child]:!min-h-[180px] md:[&>div:last-child]:!min-h-[480px]"
           />
         </div>
       </div>

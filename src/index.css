@@ -24,11 +24,22 @@
 
 @layer components {
   .slide {
-    @apply relative w-full h-screen max-h-screen flex items-center justify-center snap-start snap-always overflow-hidden;
+    @apply relative w-full flex items-center justify-center snap-start snap-always overflow-hidden;
+    height: 100vh;
+    height: 100dvh;
+    max-height: 100vh;
+    max-height: 100dvh;
   }
 
   .slide-inner {
-    @apply relative w-full max-w-7xl mx-auto px-8 md:px-16 py-10 md:py-12 z-10 max-h-screen overflow-hidden;
+    @apply relative w-full max-w-7xl mx-auto px-4 sm:px-6 md:px-16 py-8 md:py-12 z-10;
+    max-height: 100vh;
+    max-height: 100dvh;
+    overflow-y: auto;
+    scrollbar-width: none;
+  }
+  .slide-inner::-webkit-scrollbar {
+    display: none;
   }
 
   .btn-ghost {
@@ -50,7 +61,9 @@
   }
 
   .scroll-container {
-    @apply h-screen w-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth;
+    @apply w-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth;
+    height: 100vh;
+    height: 100dvh;
     scrollbar-width: none;
   }
   .scroll-container::-webkit-scrollbar {

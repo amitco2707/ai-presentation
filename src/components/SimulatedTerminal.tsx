@@ -164,7 +164,7 @@ export default function SimulatedTerminal({
       {/* Body */}
       <div
         ref={scrollerRef}
-        className="font-mono text-[13px] md:text-sm leading-relaxed p-5 md:p-6 min-h-[320px] max-h-[420px] overflow-y-auto space-y-1"
+        className="font-mono text-[12px] md:text-sm leading-relaxed p-4 md:p-6 min-h-[180px] md:min-h-[320px] max-h-[260px] md:max-h-[420px] overflow-y-auto space-y-1"
         style={{ scrollbarWidth: "thin" }}
       >
         {rendered.map((line, idx) => renderLine(line, idx))}
