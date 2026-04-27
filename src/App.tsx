@@ -53,7 +53,7 @@ export default function App() {
   const { containerRef, activeIndex, goTo, next, prev } = useSnapScroll(SLIDES.length);
 
   return (
-    <div className="relative h-screen w-screen bg-base text-cream overflow-hidden">
+    <div className="relative h-screen w-screen bg-surface text-cream overflow-hidden">
       {/* Background atmosphere */}
       <div className="pointer-events-none fixed inset-0 bg-grid opacity-40" />
       <div className="pointer-events-none fixed inset-0 bg-radial-fade" />

@@ -16,7 +16,7 @@ export default function Slide06_LLMvsAgentic({ active }: Props) {
     >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 relative">
         {/* Divider VS */}
-        <div className="hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-20 h-16 w-16 rounded-full bg-base border-2 border-brand-orange/40 items-center justify-center font-mono text-xs tracking-widest text-brand-amber shadow-glow-sm">
+        <div className="hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-20 h-16 w-16 rounded-full bg-surface border-2 border-brand-orange/40 items-center justify-center font-mono text-xs tracking-widest text-brand-amber shadow-glow-sm">
           VS
         </div>
 

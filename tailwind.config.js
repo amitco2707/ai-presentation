@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        base: "#0a0a0a",
+        surface: "#0a0a0a",
         elevated: "#141414",
         panel: "#1c1c1c",
         brand: {
