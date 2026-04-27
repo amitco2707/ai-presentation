@@ -63,7 +63,7 @@ export default function Slide01_Title({ active }: Props) {
           initial={{ opacity: 0 }}
           animate={active ? { opacity: 1 } : { opacity: 0 }}
           transition={{ delay: 0.9 }}
-          className="mt-6 text-2xl md:text-3xl font-light text-cream/70 tracking-tight"
+          className="mt-6 text-2xl md:text-3xl font-light text-cream tracking-tight"
         >
           From <span className="text-brand-amber font-medium">Zero</span> to{" "}
           <span className="text-brand-amber font-medium">Hero</span>

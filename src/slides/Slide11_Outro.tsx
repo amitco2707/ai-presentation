@@ -63,7 +63,7 @@ export default function Slide11_Outro({ active }: Props) {
           <br />
           of <span className="gradient-text">AI</span>.
         </h1>
-        <p className="mt-6 text-lg md:text-xl text-cream/80 max-w-2xl mx-auto">
+        <p className="mt-6 text-lg md:text-xl text-cream max-w-2xl mx-auto">
           You don't need to write code to understand what's happening.
           You just need the right map — and now you have one.
         </p>

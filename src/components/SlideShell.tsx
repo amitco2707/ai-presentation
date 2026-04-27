@@ -88,7 +88,7 @@ export default function SlideShell({
                 hidden: { opacity: 0, y: 15 },
                 visible: { opacity: 1, y: 0 },
               }}
-              className="mt-1.5 md:mt-3 text-sm md:text-base lg:text-lg text-cream/80 max-w-3xl leading-relaxed"
+              className="mt-1.5 md:mt-3 text-sm md:text-base lg:text-lg text-cream max-w-3xl leading-relaxed"
             >
               {subtitle}
             </motion.p>
